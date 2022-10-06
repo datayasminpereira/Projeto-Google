@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+                                /* CABEÇALHO */
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 6px;
+}
+
+.hdr  {
+    display:flex;
+    height: 48px;
+    align-items: center;
+    width: 305px;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.hdr1 {
+    display: flex;
+    width: 105px;
+    height: 24px;
+    justify-content: space-between;
+} 
+
+.hdr2 {
+    display: flex;
+    width: 185px;
+    height: 40px; /* antes era 35px*/
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gmail, .imagens {
+    color: rgba(0,0,0,.87);
+    font: 13px/27px Roboto, Arial, sans-serif;
+}
+/* header .login {
+    padding: 5px;
+    margin: 5px;
+} */
+
+a:hover{
+    text-decoration: underline;
+}
+
+.engloba-burguer {
+    height: 41px;
+    width: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.engloba-burguer:hover {
+    border-radius: 20.5px;
+    background-color: #f4f4f4;
+}
+
+img .burguer {
+    height: 24px;
+    width: 24px;
+}
+
+/* .burguer:hover {
+    background-color: red;
+} */
+
+.login {
+    color:  #fff;
+    background-color: #1a73e8;
+    border: 1px solid transparent;
+    width: 110px;
+    height: 35px;
+    border-radius: 4px;
+    font-family: Google Sans,Roboto,Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+.login:hover {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08); /* elevation*/
+    background-color: rgb(26, 115, 232, 0.9)
+}
+
+                                    /* MEIO */
+
+.middle1 {
+    top: 60px;
+    height: 180px; /* antes era 290px*/
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.logo-google{
+    height: 150px;
+    width: 250px;
+}
+
+.middle2 {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;   
+}
+
+.div-input {
+    height: 44px;
+    width: 584px;
+    margin: 0;
+    z-index: 3;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.div-input:hover{
+     box-shadow: -1px 2px 1px 0 rgba(0, 0, 0, 0.07), 0 0 1px 1px rgba(0, 0, 0, 0.07);
+}
+
+.search {
+    background-color: transparent;
+    border: none;
+    margin: 0px 8px;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    color: rgba(0,0,0,.87);
+    width: 483px;
+    height: 34px;
+    font-size: 16px;
+}
+
+
+.middle3 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 88px;
+}
+
+.botoes-embaixo-input {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    top: 15px;
+    width: 584px;
+    height: 70px;
+}
+
+.btn1-after-input, .btn2-after-input {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+}
+
+.btn1-after-input:hover, .btn2-after-input:hover {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.09), 0 0 2px 2px rgba(0, 0, 0, 0.09);
+}
+
+
+                                /* RODAPE */
+
+footer {
+    position: absolute;
+    height: 95px; /* deve ser 95px, antes era 50px*/
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    background: #f2f2f2;
+}
+
+.footer-em-cima {
+    position: relative;
+    height: 44px;
+    width: 100%;
+    padding: 15px 0px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: #70757a;
+}
+
+.footer-embaixo {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer-embaixo-a-esquerda {
+    position: relative;
+    width: 28%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-embaixo-a-direita {
+    position: relative;
+    width: 18%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-em-cima, .footer-embaixo-a-esquerda, .footer-embaixo-a-direita {
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    color: #70757a;
+}
+
+
+
+
+
+
